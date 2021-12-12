@@ -1,0 +1,25 @@
+.title-box {
+    position:absolute;
+    height:fit-content;
+    width: fit-content;
+    background-color: rgb(27, 139, 139);
+    top: 50px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    
+    
+}
+
+.title{
+    color:white;
+    font-size: 40px;
+    margin: 5px;
+    font-family: "Open Sans" ;
+}
+
+#map{
+    height:100vh;
+    width: 100vw;
+}

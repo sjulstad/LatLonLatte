@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CoffeeMap</title>
+
+        
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+
+        <link rel="stylesheet" href="styles.css">
+        <script type="module" src="script.js"></script>
+    </head>
+    <body>
+        <div id="map"></div>
+        <div class="title-box">
+            <div class="title">Latitude, Longitude, and Lattes</div>        
+        </div>   
+        
+    
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2p1bHN0YWQiLCJhIjoiY2tuOGhxYjh5MDlvNzJucXY2ZmthM2NheCJ9.4O18jIcCi3h1aeEoPJG7Tw';
+         const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/sjulstad/ckwzzmvcp1r9d15um9ggu3bi7', // style URL
+            center: [38.296699, 18.130011], // starting position [lng, lat]
+            zoom: 1.65 // starting zoom   
+        });
+        </script>
+
+    </body>
+</html>
